@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promoção Especial</title>
+<style>
+  /* Reset e tipografia */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Arial', sans-serif; background: #f0f4f8; color: #333; }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #4CAF50, #66BB6A);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    animation: fadeInDown 1s ease;
+  }
+  header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+  header p { font-size: 1.2rem; }
+
+  /* Seção principal */
+  section {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  section h2 { font-size: 2rem; margin-bottom: 1rem; }
+  section p { font-size: 1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+  /* Botão */
+  .btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .btn:hover { background: #45a049; transform: translateY(-3px); }
+
+  /* Formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease;
+  }
+  input, button {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button { background: #4CAF50; color: white; border: none; cursor: pointer; }
+  button:hover { background: #45a049; }
+
+  /* Rodapé */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  /* Animações */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Responsividade */
+  @media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    section h2 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Oferta Exclusiva!</h1>
+    <p>Não perca esta oportunidade única de poupar!</p>
+  </header>
+
+  <section>
+    <h2>Desconto Especial de 50%</h2>
+    <p>Aproveite a nossa promoção limitada. Só até ao final do mês!</p>
+    <a href="#comprar" class="btn">Compre Agora</a>
+  </section>
+
+  <section id="comprar">
+    <h2>Formulário de Compra</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Sua Empresa. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
